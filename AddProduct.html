@@ -1,141 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="resources/css/main.css" />
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="resources/libs/bootstrap/bootstrap.min.css" />
-        <!-- fontAwesome -->
-        <link rel="stylesheet" href="resources/libs/fontawesome/all.min.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>AMR DORRAH</title>
-    </head>
-        <body>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo03"
-                    aria-controls="navbarTogglerDemo03"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#">Navbar</a>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html"
-                        >Home</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="products.html">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Description.html">Description</a>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="resources/css/main.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="resources/libs/bootstrap/bootstrap.min.css" />
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="resources/libs/fontawesome/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMR DORRAH</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Navbar</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Description.html">Description</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-            <div class="container mt-4">
-                <h1 >Add Product :-</h1>
-                <hr>
-                <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-6 position-relative">
-                      <label for="validationTooltip01" class="form-label">Product Name :-</label>
-                      <input type="text" class="form-control" id="validationTooltip01" value="" required>
-                      <div class="invalid-tooltip">
-                        Please enter the name!
-                      </div>
-                    </div>
-                    <div class="col-md-6 position-relative">
-                        <label for="validationTooltip04" class="form-label">Product Category :-</label>
-                        <select class="form-select" id="validationTooltip04" required>
-                          <option selected disabled value="">Chosse Category</option>
-                          <option>Labtop</option>
-                          <option>accessories</option>
-                        </select>
-                        <div class="invalid-tooltip">
-                          Please select a valid Category!
-                        </div>
-                      </div>
-                      <h5 style="margin-top: 25px;">status :-</h5>
-                      <div class="row">
+    <div class="container mt-4">
+      <h1>Add Product :-</h1>
+      <hr />
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltip01" class="form-label"
+            >Product Name :-</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="validationTooltip01"
+            value=""
+            required
+          />
+          <div class="invalid-tooltip">Please enter the name!</div>
+        </div>
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltip04" class="form-label"
+            >Product Category :-</label
+          >
+          <select class="form-select" id="validationTooltip04" required>
+            <option selected disabled value="">Chosse Category</option>
+            <option>Labtop</option>
+            <option>accessories</option>
+          </select>
+          <div class="invalid-tooltip">Please select a valid Category!</div>
+        </div>
+        <h5 style="margin-top: 25px">status :-</h5>
+        <div class="row">
+          <div class="form-check ms-5">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="validationFormCheck2"
+              name="radio-stacked"
+              required
+            />
+            <label class="form-check-label" for="validationFormCheck2"
+              >New</label
+            >
+          </div>
+          <div class="form-check mb-3 ms-5">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="validationFormCheck3"
+              name="radio-stacked"
+              required
+            />
+            <label class="form-check-label" for="validationFormCheck3"
+              >Used</label
+            >
+            <!-- <div class="invalid-tooltip">More example invalid feedback text</div> -->
+          </div>
+        </div>
+        <div style="margin-top: 0px" class="col-md-4 position-relative">
+          <label for="validationTooltip01" class="form-label"
+            >original price :-</label
+          >
+          <div class="input-group mb-3">
+            <input
+              type="number"
+              class="form-control"
+              id="validationTooltip01"
+              aria-label="Amount (to the nearest dollar)"
+              required
+            />
+            <div class="invalid-tooltip">Please add number!</div>
+          </div>
+        </div>
+        <div style="margin-top: 0px" class="col-md-4 position-relative">
+          <label for="validationTooltip01" class="form-label"
+            >Max Price :-</label
+          >
+          <div class="input-group mb-3">
+            <input
+              type="number"
+              class="form-control"
+              id="validationTooltip01"
+              aria-label="Amount (to the nearest dollar)"
+              required
+            />
+            <div class="invalid-tooltip">Please add number!</div>
+          </div>
+        </div>
+        <div style="margin-top: 0px" class="col-md-4 position-relative">
+          <label for="validationTooltip01" class="form-label"
+            >Min Price :-</label
+          >
+          <div class="input-group mb-3">
+            <input
+              type="number"
+              class="form-control"
+              id="validationTooltip01"
+              aria-label="Amount (to the nearest dollar)"
+              required
+            />
+            <div class="invalid-tooltip">Please add number!</div>
+          </div>
+        </div>
 
-                          <div class="form-check  ms-5">
-                              <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
-                              <label class="form-check-label" for="validationFormCheck2">New</label>
-                              
-                            </div>
-                            <div class="form-check mb-3 ms-5">
-                                <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
-                                <label class="form-check-label" for="validationFormCheck3">Used</label>
-                                <!-- <div class="invalid-tooltip">More example invalid feedback text</div> -->
-                            </div>
-                        </div>
-                        <div style="margin-top: 0px;" class="col-md-4 position-relative">
-                            <label for="validationTooltip01" class="form-label">original price :-</label>
-                            <div class="input-group mb-3">
-                              <input type="number" class="form-control"id="validationTooltip01"  aria-label="Amount (to the nearest dollar)"required>
-                              <div class="invalid-tooltip">
-                                Please add number!
-                              </div>
-                            </div>
-                          </div>
-                    <div style="margin-top: 0px;" class="col-md-4 position-relative">
-                      <label for="validationTooltip01" class="form-label">Max Price :-</label>
-                      <div class="input-group mb-3">
-                        <input type="number" class="form-control" id="validationTooltip01" aria-label="Amount (to the nearest dollar)"required>
-                      <div class="invalid-tooltip">
-                        Please add number!
-                      </div>    
-                      </div>
-                    </div>
-                    <div style="margin-top: 0px;" class="col-md-4 position-relative">
-                        <label for="validationTooltip01" class="form-label">Min Price :-</label>
-                        <div class="input-group mb-3">
-                          <input type="number" class="form-control" id="validationTooltip01" aria-label="Amount (to the nearest dollar)"required>
-                        <div class="invalid-tooltip">
-                          Please add number!
-                        </div>    
-                        </div>
-                    </div>
+        <div style="margin-top: 0px" class="col-md-2 position-relative">
+          <label for="validationTooltip01" class="form-label"
+            >Quantity :-</label
+          >
+          <div class="input-group mb-3">
+            <input
+              type="number"
+              class="form-control"
+              id="validationTooltip01"
+              aria-label="Amount (to the nearest dollar)"
+              required
+            />
+            <div class="invalid-tooltip">Please add number!</div>
+          </div>
+        </div>
+        <div style="margin-top: 10px" class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Addition Description :-</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
 
-                    <div style="margin-top: 0px;" class="col-md-2 position-relative">
-                        <label for="validationTooltip01" class="form-label">Quantity :-</label>
-                        <div class="input-group mb-3">
-                          <input type="number" class="form-control" id="validationTooltip01" aria-label="Amount (to the nearest dollar)"required>
-                        <div class="invalid-tooltip">
-                          Please add number!
-                        </div>    
-                        </div>
-                    </div>
-                    <div style="margin-top: 10px;" class="mb-3">
-                        <label  for="exampleFormControlTextarea1" class="form-label">Addition Description :-</label>
-                        <textarea  class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Any comment :-</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                    <div class="col-12">
-                      <button class="btn btn-primary mb-5" type="submit"> Add </button>
-                    </div>
-                  </form>
-
-                  
-                </div>
-            <!-- <footer>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Any comment :-</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary mb-5" type="submit">Add</button>
+        </div>
+      </form>
+    </div>
+    <!-- <footer>
                 
                 <div class="footer">
                     <div class="footer-content">
@@ -147,10 +201,10 @@
                 </div>
                 </div>
             </footer> -->
-<script src="resources/js/validation.js"></script>
-<script src="resources/libs/jquery/jQuery.min.js"></script>
-<script src="resources/libs/bootstrap/bootstrap.min.js"></script>
-<script src="resources/libs/fontawesome/all.min.js"></script>
-<script src="resources/js/main.js"></script>
-</body>
+    <script src="resources/js/validation.js"></script>
+    <script src="resources/libs/jquery/jQuery.min.js"></script>
+    <script src="resources/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="resources/libs/fontawesome/all.min.js"></script>
+    <script src="resources/js/main.js"></script>
+  </body>
 </html>

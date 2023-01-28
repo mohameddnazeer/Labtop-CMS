@@ -50,9 +50,6 @@
           <div class="col-9">
             <h3>Categories :-</h3>
           </div>
-          <div class="col-3">
-            <button type="button"  class="btn btn-primary"><a href="AddProduct.html" style="color: white; cursor: pointer; text-decoration: none;">Add Product</a> </button>
-          </div>
         </div>
       </div>
       <div
@@ -68,47 +65,149 @@
         </li>
       </div>
       <div class="row">
-        <div class="col-3" style="margin-left: 800px;">
-
-          <label for="customRange3" class="form-label"><h4>range for price :-</h4></label>
-          <input type="range" class="form-range" min="0" max="1000000" step="50" id="customRange3">
+        <div class="col-3" style="margin-left: 800px">
+          <label for="customRange3" class="form-label"
+            ><h4>range for price :-</h4></label
+          >
+          <input
+            type="range"
+            class="form-range"
+            min="0"
+            max="1000000"
+            step="50"
+            id="customRange3"
+          />
         </div>
       </div>
-      <form class="d-flex col-3 ms-5">
+      <form class="d-flex col-4 ms-5 align-items-center">
         <input
-          class="form-control me-2"
+          class="form-control search me-2"
           type="search"
           placeholder="Search"
           aria-label="Search"
         />
         <button class="btn btn-outline-success" type="submit">Search</button>
+        <div class="status d-flex align-items-center">
+          <input
+            class="ms-2 new-item"
+            type="radio"
+            name="status"
+            value="new"
+            id="new-item"
+            checked
+          />
+          <label class="ms-2" for="new-item">New</label>
+          <input
+            class="ms-3 used-item"
+            type="radio"
+            name="status"
+            value="used"
+            id="used-item"
+          />
+          <label class="ms-2" for="used-item">Used</label>
+        </div>
       </form>
 
-      <div class="col-10 mt-3" style="margin-left: 30px">
+      <div class="col-12 mt-3">
         <table class="table">
           <thead class="table-light">
             <tr>
               <th scope="col">#</th>
               <th scope="col">Name</th>
-              <th scope="col">Price</th>
               <th scope="col">Hint</th>
-              <th scope="col">Learn More</th>
-              <th scope="col">Available</th>
-              <th scope="col">Actions</th>
+              <th scope="col">Quantaty</th>
+              <th scope="col">Extra</th>
+              <th scope="col">Min Price</th>
+              <th scope="col">Price</th>
+              <th scope="col">Discription</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>gamming-3</td>
-              <td>12000</td>
-              <td></td>
+              <td>dell g15 5511 i5 11th gen 11400h</td>
+              <td>No Hint</td>
+              <td>5</td>
               <td>
-                <button type="button" class="btn btn-primary"> <a href="Description.html" style="color: white; cursor: pointer; text-decoration: none;">Go</a> </button>
+                <div class="ram">
+                  <label class="" for="">RAM: </label>
+                  <input
+                    class="ms-1"
+                    type="checkbox"
+                    name="4"
+                    id="ram-4"
+                    value="4"
+                  />
+                  <label class="" for="ram-4">4</label>
+                  <input
+                    class="ms-1"
+                    type="checkbox"
+                    name="8"
+                    id="ram-8"
+                    value="8"
+                    checked
+                  />
+                  <label class="" for="ram-8">8</label>
+                  <input
+                    class="ms-1"
+                    type="checkbox"
+                    name="16"
+                    id="ram-16"
+                    value="16"
+                  />
+                  <label class="" for="ram-16">16</label>
+                  <input
+                    class="ms-1"
+                    type="checkbox"
+                    name="32"
+                    id="ram-32"
+                    value="32"
+                  />
+                  <label class="" for="ram-32">32</label>
+                </div>
+                <div class="storage-ssd">
+                  <label class="" for="">SSD: </label>
+                  <input class="ms-2" type="checkbox" name="128" id="sdd-128" />
+                  <label class="" for="sdd-128">128</label>
+                  <input
+                    class="ms-1"
+                    type="checkbox"
+                    name="256"
+                    id="sdd-256"
+                    checked
+                  />
+                  <label class="" for="sdd-256">256</label>
+                  <input class="ms-1" type="checkbox" name="500" id="sdd-500" />
+                  <label class="" for="sdd-500">500</label>
+                  <input class="ms-1" type="checkbox" name="1T" id="sdd-1T" />
+                  <label class="" for="sdd-1T">1T</label>
+                </div>
+                <div class="storage-hdd">
+                  <label class="" for="">HDD: </label>
+                  <input class="ms-1" type="checkbox" name="500" id="hdd-500" />
+                  <label class="" for="hdd-500">500</label>
+                  <input
+                    class="ms-1"
+                    type="checkbox"
+                    name="1T"
+                    id="hdd-1T"
+                    checked
+                  />
+                  <label class="" for="hdd-1T">1T</label>
+                  <input class="ms-1" type="checkbox" name="2T" id="hdd-2T" />
+                  <label class="" for="hdd-2T">2T</label>
+                </div>
               </td>
-              <td></td>
+              <td>12000</td>
+              <td>12500</td>
               <td>
-                <button type="button" class="btn btn-success">Edit</button>
+                <button type="button" class="btn btn-primary">
+                  <a
+                    href="Description.html"
+                    style="color: white; cursor: pointer; text-decoration: none"
+                    >Go</a
+                  >
+                </button>
               </td>
             </tr>
           </tbody>
