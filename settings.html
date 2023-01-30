@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="resources/css/settings.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="resources/libs/bootstrap/bootstrap.min.css" />
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="resources/libs/fontawesome/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+  </head>
+  <body>
+    <h1 class="m-4 mb-5">Sett<span>ing</span>s</h1>
+    <div class="container">
+      <form class="form" action="#" method="get">
+        <label class="label mt-2" for="product">Product</label>
+        <input
+          id="product"
+          class="form-control mt-2"
+          type="text"
+          value=""
+          placeholder="Product"
+        />
+        <!-- ____________________________________________________________________ -->
+        <label class="label mt-2" for="price">Price </label>
+        <input
+          id="price"
+          class="form-control mt-2"
+          type="text"
+          value=""
+          placeholder="Price"
+        />
+        <!-- ____________________________________________________________________ -->
+        <div class="submeted">
+          <select id="stuts">
+            <option value="one">One</option>
+            <option value="two">two</option>
+            <option value="three">three</option>
+            <option value="four">four</option>
+          </select>
+          <!-- onclick=" addProduct() " -->
+          <button
+            type="submit"
+            class="btn btn-primary m-3 ms-5 submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- ____________________________________________________________________ -->
+    <!-- <div class="contain">
+      <table id="table" class="table mt-5">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Name</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table> -->
+      <div class="container">
+        <div class="col-12 mt-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Name</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="btns" class="d-grid gap-2 d-md-block">
+      <button class="btn btn-danger" type="button">Delete</button>
+      <button class="btn btn-success" type="button">Edite</button>
+    </div> -->
+    <script src="resources/libs/jquery/jQuery.min.js"></script>
+    <script src="resources/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="resources/libs/fontawesome/all.min.js"></script>
+    <script src="resources/js/settings.js"></script>
+  </body>
+</html>
